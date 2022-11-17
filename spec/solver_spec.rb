@@ -31,6 +31,24 @@ describe Solver do
     it 'should return the string type' do
       expect(solver.reverse_str('Hello')).to be_kind_of(String)
     end
+  end
+
+  context 'Test to check the fizzbuzz method' do
+    it 'should throw Error when argument is a string' do 
+      expect { solver.fizz_buzz('3') }.to raise_exception(ArgumentError)
+    end
+
+    it 'should return fizz number divisble by 3' do
+      expect(solver.fizz_buzz(3)).to eq 'fizz'
+    end
+
+    it 'should return buzz number divisble by 5' do
+      expect(solver.fizz_buzz(5)).to eq 'buzz'
+    end
+
+    it 'should return buzz number divisble by 3 and 5' do
+      expect(solver.fizz_buzz(15)).to eq 'fizzbuzz'
+    end
 
   end
 end

@@ -15,4 +15,6 @@ class Solver
     not(str.instance_of?(String)) || (str.empty?) ? (raise ArgumentError, 'Enter only non-empty string') :  str.reverse
 
   end
+
+
 end
