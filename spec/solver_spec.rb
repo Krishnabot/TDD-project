@@ -35,10 +35,10 @@ describe Solver do
 
   context 'when testing the fizzbuzz method' do
     it 'Should return a string when fizzbuzz method is called with an intger' do
-      solver = Solver.new
       expect(solver.fizz_buzz(3)).to eq 'fizz'
       expect(solver.fizz_buzz(5)).to eq 'buzz'
       expect(solver.fizz_buzz(15)).to eq 'fizzbuzz'
+      expect(solver.fizz_buzz(8)).to eq '8'
     end
   end
 end

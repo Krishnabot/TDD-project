@@ -24,7 +24,7 @@ class Solver
     elsif (m % 5).zero?
       p 'buzz'
     else 
-      m.to_s
+      p m.to_s
     end
   end
 end
