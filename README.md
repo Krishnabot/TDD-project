@@ -17,7 +17,7 @@
 
 - Use `https://github.com/Krishnabot/TDD-project` to clone this repo in your Local machine.
 - In terminal  run `ruby --version && irb` for Ruby Installation
-- In terminal rub `bundle install` to install necessary gems.
+- In terminal rub `bundle install` to install necessary gems.s
 - In the terminal, you can try running ruby by using IRB or an extension in the case of VSCode e.g Code runner
 
 ## Author
