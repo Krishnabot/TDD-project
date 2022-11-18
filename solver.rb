@@ -12,19 +12,18 @@ class Solver
   end
 
   def reverse_str(str)
-    not(str.instance_of?(String)) || (str.empty?) ? (raise ArgumentError, 'Enter only non-empty string') :  str.reverse
-
+    !str.instance_of?(String) || str.empty? ? (raise ArgumentError, 'Enter only non-empty string') : str.reverse
   end
 
-  def fizz_buzz(m)
-    if (m % 3).zero? && (m % 5).zero?
+  def fizz_buzz(arg)
+    if (arg % 3).zero? && (arg % 5).zero?
       p 'fizzbuzz'
-    elsif (m % 3).zero?
+    elsif (arg % 3).zero?
       p 'fizz'
-    elsif (m % 5).zero?
+    elsif (arg % 5).zero?
       p 'buzz'
-    else 
-      p m.to_s
+    else
+      p arg.to_s
     end
   end
 end
